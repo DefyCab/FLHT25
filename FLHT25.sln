@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FL", "FL\FL.csproj", "{9E964E23-1458-43FD-995A-FDA8462004DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laxa1", "Laxa1\Laxa1.csproj", "{E44B7C86-90B1-4E1D-BD0E-F9154E957ADF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E964E23-1458-43FD-995A-FDA8462004DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E964E23-1458-43FD-995A-FDA8462004DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E964E23-1458-43FD-995A-FDA8462004DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E964E23-1458-43FD-995A-FDA8462004DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E44B7C86-90B1-4E1D-BD0E-F9154E957ADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E44B7C86-90B1-4E1D-BD0E-F9154E957ADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E44B7C86-90B1-4E1D-BD0E-F9154E957ADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E44B7C86-90B1-4E1D-BD0E-F9154E957ADF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10B20580-33A0-4FFB-8902-0C702B9359C7}
+	EndGlobalSection
+EndGlobal
