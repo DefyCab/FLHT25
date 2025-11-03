@@ -5,23 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Laxa1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="750" Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>
             <ColumnDefinition Width="87*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="Ett" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="110,46,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Ett_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="EttTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="110,127,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="EttTva_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
-        <Button x:Name="EttTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="110,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Text" Background="#FF7EBECE" FontSize="22" FontWeight="ExtraBold"/>
-        <Button x:Name="TvaEtt" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="220,46,0,0" VerticalAlignment="Top" Height="75" Width="100"  Click="ForLoop" Background="#FF7EBECE" FontSize="20" FontWeight="Bold"/>
-        <Button x:Name="TvaTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="220,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="ElseIf" Background="#FF7EBECE"/>
-        <Button x:Name="TvaTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="220,127,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Yellow" Background="#FF7EBECE"/>
-        <Button x:Name="TreEtt" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,47,0,0" VerticalAlignment="Top" Height="75" Width="100"   Background="#FF7EBECE"/>
-        <Button x:Name="TreTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="ColorSwap" Background="#FF7EBECE" MouseWheel="Grid_MouseWheel" MouseEnter="TreTre_MouseEnter_1"/>
-        <Button x:Name="TreTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,127,0,0" VerticalAlignment="Top" Height="75" Width="100"  Background="#FF7EBECE" MouseEnter="TreTre_MouseEnter"/>
-        <Label x:Name="label" Grid.Column="1" Content="Spelare 1" HorizontalAlignment="Left" Margin="110,311,0,0" VerticalAlignment="Top" Height="38" Width="79" Background="#FF6CAB56" FontSize="16"/>
-        <Label x:Name="label_Copy" Grid.Column="1" Content="Spelare 2" HorizontalAlignment="Left" Margin="221,311,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" Background="#FF6CAB56"/>
-
+        <Button x:Name="Ett" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="110,46,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click"  Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="EttTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="110,127,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="EttTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="110,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="TvaEtt" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="220,46,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="TvaTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="220,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="TvaTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="220,127,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="TreEtt" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,47,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click"  Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="TreTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="TreTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,127,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="Spelare_1" Grid.Column="1" Content="Spelare 1" HorizontalAlignment="Left" Margin="110,311,0,0" VerticalAlignment="Top" Height="38" Width="90" Background="#FF6CAB56" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Spelare_2" Grid.Column="1" Content="Spelare 2" Margin="110,368,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" Background="#FF6CAB56" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <Label x:Name="X" Grid.Column="1" Content="X" HorizontalAlignment="Left" Margin="246,311,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="O" Grid.Column="1" Content="O" HorizontalAlignment="Left" Margin="245,362,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
     </Grid>
 </Window>
