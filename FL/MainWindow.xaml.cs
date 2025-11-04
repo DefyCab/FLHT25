@@ -11,15 +11,17 @@ using System.Windows.Shapes;
 
 namespace FL
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+
+
+        Person Love = new() { Name = "Love", Age = 25 };
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -29,6 +31,11 @@ namespace FL
         static public void Love_says_hi()
         {
             MessageBox.Show("Love säger hej");
+        }
+
+        private void ok(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = Love.Name;
         }
     }
 }

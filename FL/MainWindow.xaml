@@ -11,7 +11,7 @@
             <ColumnDefinition Width="20*"/>
             <ColumnDefinition Width="60*"/>
         </Grid.ColumnDefinitions>
-        <Button HorizontalAlignment="Left" Margin="140,110,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="86" Width="217" Click="Button_Click" BorderBrush="#FF540000" Foreground="#FFECC1C1" Background="#FFD85151">
+        <Button HorizontalAlignment="Left" Margin="374,40,0,0" VerticalAlignment="Top" Height="86" Width="217" Click="Button_Click" BorderBrush="#FF540000" Foreground="#FFECC1C1" Background="#FFD85151" Grid.Column="1">
             <Button Content="Button" FontSize="36" FontWeight="Bold">
                 <Button.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -21,7 +21,10 @@
                 </Button.Foreground>
             </Button>
         </Button>
-        <Button x:Name="button" Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="374,153,0,0" VerticalAlignment="Top" Height="89" Width="124"/>
+        <Button x:Name="button" Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="76,0,0,0" VerticalAlignment="Center" Height="53" Width="150" Click="ok"/>
+        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="74,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" Height="51"/>
+        <Border BorderBrush="Black" BorderThickness="10
+                " Grid.Column="1" Margin="271,154,129,20" Background="#FF961717"/>
 
     </Grid>
 </Window>

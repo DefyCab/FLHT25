@@ -1,0 +1,25 @@
+﻿<Window x:Class="Yatzy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Yatzy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="ettBox" HorizontalAlignment="Left" Margin="213,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="ettorSumma"/>
+        <TextBox x:Name="tvaBox" HorizontalAlignment="Left" Margin="213,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21"/>
+        <TextBox x:Name="treBox" HorizontalAlignment="Left" Margin="213,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21"/>
+        <TextBox x:Name="fyrBox" HorizontalAlignment="Left" Margin="213,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21"/>
+        <TextBox x:Name="femBox" HorizontalAlignment="Left" Margin="213,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21"/>
+        <TextBox x:Name="sexBox" HorizontalAlignment="Left" Margin="213,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21"/>
+        <TextBlock x:Name="ett" HorizontalAlignment="Left" Margin="150,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Ettor"/></TextBlock>
+        <TextBlock x:Name="tva" HorizontalAlignment="Left" Margin="150,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Tvåor"/></TextBlock>
+        <TextBlock x:Name="tre" HorizontalAlignment="Left" Margin="150,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Treor"/></TextBlock>
+        <TextBlock x:Name="fyra" HorizontalAlignment="Left" Margin="150,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Fyror"/></TextBlock>
+        <TextBlock x:Name="fem" HorizontalAlignment="Left" Margin="150,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Femmor"/></TextBlock>
+        <TextBlock x:Name="sex" HorizontalAlignment="Left" Margin="150,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Sexor"/></TextBlock>
+        <TextBlock x:Name="summa" HorizontalAlignment="Left" Margin="150,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Summa:"/></TextBlock>
+        <Button x:Name="btnSumma" Content="" HorizontalAlignment="Left" Margin="220,246,0,0" VerticalAlignment="Top" Width="47" Background="#FFEEFDAC" Click="btnSumma_Click"/>
+    </Grid>
+</Window>
