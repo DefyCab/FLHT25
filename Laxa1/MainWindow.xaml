@@ -21,9 +21,11 @@
         <Button x:Name="TreEtt" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,47,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click"  Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
         <Button x:Name="TreTre" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,207,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
         <Button x:Name="TreTva" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="330,127,0,0" VerticalAlignment="Top" Height="75" Width="100" Click="Button_Click" Background="#FF7EBECE" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="Spelare_1" Grid.Column="1" Content="Spelare 1" HorizontalAlignment="Left" Margin="110,311,0,0" VerticalAlignment="Top" Height="38" Width="90" Background="#FF6CAB56" FontSize="16" FontWeight="Bold"/>
-        <Label x:Name="Spelare_2" Grid.Column="1" Content="Spelare 2" Margin="110,368,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" Background="#FF6CAB56" HorizontalAlignment="Left" FontWeight="Bold"/>
-        <Label x:Name="X" Grid.Column="1" Content="X" HorizontalAlignment="Left" Margin="246,311,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
-        <Label x:Name="O" Grid.Column="1" Content="O" HorizontalAlignment="Left" Margin="245,362,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="Spelare_1" Grid.Column="1" Content="Spelare 1" HorizontalAlignment="Left" Margin="110,311,0,0" VerticalAlignment="Top" Height="38" Width="90" Background="#FFABA856" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="Spelare_2" Grid.Column="1" Content="Spelare 2" Margin="110,368,0,0" VerticalAlignment="Top" Height="38" Width="90" FontSize="16" Background="#FF8356AB" HorizontalAlignment="Left" FontWeight="Bold"/>
+        <Label x:Name="X" Grid.Column="1" Content="X" HorizontalAlignment="Left" Margin="234,311,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="O" Grid.Column="1" Content="O" HorizontalAlignment="Left" Margin="232,362,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="Tur2" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="296,369,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Width="24" Height="26" Background="Red"/>
+        <Label x:Name="Tur1" Grid.Column="1" Content="" HorizontalAlignment="Left" Margin="296,318,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="22" Width="24" Height="26" Background="Green"/>
     </Grid>
 </Window>

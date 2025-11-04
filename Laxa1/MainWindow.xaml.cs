@@ -32,12 +32,16 @@ namespace Laxa1
                 if (player % 2 == 0)
                 {
                     button.Content = "X";
+                    Tur1.Background = Brushes.Green;
+                    Tur2.Background = Brushes.Red;
                     player = player + 1;
                     turns = turns + 1;
                 }
                 else if (player % 2 != 0)
                 {
                     button.Content = "O";
+                    Tur1.Background = Brushes.Red;
+                    Tur2.Background = Brushes.Green;
                     player = player + 1;
                     turns = turns + 1;
                 }
