@@ -33,38 +33,37 @@ namespace Yatzy
         private void ettorSumma(object sender, TextChangedEventArgs e)
         {
             ettSumma = int.Parse(ettBox.Text);
-            total = total + ettSumma;
         }
         private void tvaorSumma(object sender, TextChangedEventArgs e)
         {
             tvaSumma = int.Parse(tvaBox.Text);
-            total = total + tvaSumma;
         }
         private void treorSumma(object sender, TextChangedEventArgs e)
         {
             treSumma = int.Parse(treBox.Text);
-            total = total + treSumma;
         }
         private void fyrorsumma(object sender, TextChangedEventArgs e)
         {
             fyrSumma = int.Parse(fyrBox.Text);
-            total = total + fyrSumma;
         }
         private void femmorSumma(object sender, TextChangedEventArgs e)
         {
             femSumma = int.Parse(ettBox.Text);
-            total = total + femSumma;
         }
         private void sexorSumma(object sender, TextChangedEventArgs e)
         {
             sexSumma = int.Parse(ettBox.Text);
-            total = total + sexSumma;
         }
 
         private void btnSumma_Click(object sender, RoutedEventArgs e)
         {
+            totalSumma();
             btnSumma.Content = total;
         }
 
+        public void totalSumma()
+        {
+            total = ettSumma + tvaSumma + treSumma + fyrSumma + femSumma + sexSumma;
+        }
     }
 }
