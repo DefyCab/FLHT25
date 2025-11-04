@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Laxa1"
         mc:Ignorable="d"
         Title="MainWindow" Height="750" Width="1000">
-    <Grid>
+
+    <Grid Background="#FF6F6F75">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="13*"/>
             <ColumnDefinition Width="87*"/>
