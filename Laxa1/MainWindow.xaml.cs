@@ -13,17 +13,12 @@ using System.Windows.Shapes;
 
 namespace Laxa1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
-
-
 
         public int player = 2;
         public int turns = 0;
