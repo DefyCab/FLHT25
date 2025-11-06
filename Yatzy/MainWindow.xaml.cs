@@ -57,6 +57,7 @@ namespace Yatzy
 
         public void totalSumma()
         {
+            // Parsing utflyttad så inte programmet kastar undantag om ändrar summan i textboxen.
             total = int.Parse(ettSumma) + int.Parse(tvaSumma) + int.Parse(treSumma) + int.Parse(fyrSumma) + int.Parse(femSumma) + int.Parse(sexSumma);
         }
 
