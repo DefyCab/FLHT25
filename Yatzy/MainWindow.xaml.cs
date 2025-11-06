@@ -21,31 +21,32 @@ namespace Yatzy
             InitializeComponent();
         }
 
-        public int ettSumma = 0, tvaSumma = 0, treSumma = 0, fyrSumma = 0, femSumma = 0, sexSumma = 0, total = 0;
+        public int total;
+        public string ettSumma, tvaSumma, treSumma, fyrSumma, femSumma, sexSumma;
 
         private void ettorSumma(object sender, TextChangedEventArgs e)
         {
-            ettSumma = int.Parse(ettBox.Text);
+            ettSumma = ettBox.Text;
         }
         private void tvaorSumma(object sender, TextChangedEventArgs e)
         {
-            tvaSumma = int.Parse(tvaBox.Text);
+            tvaSumma = tvaBox.Text;
         }
         private void treorSumma(object sender, TextChangedEventArgs e)
         {
-            treSumma = int.Parse(treBox.Text);
+            treSumma = treBox.Text;
         }
         private void fyrorSumma(object sender, TextChangedEventArgs e)
         {
-            fyrSumma = int.Parse(fyrBox.Text);
+            fyrSumma = fyrBox.Text;
         }
         private void femmorSumma(object sender, TextChangedEventArgs e)
         {
-            femSumma = int.Parse(femBox.Text);
+            femSumma = femBox.Text;
         }
         private void sexorSumma(object sender, TextChangedEventArgs e)
         {
-            sexSumma = int.Parse(sexBox.Text);
+            sexSumma = sexBox.Text;
         }
 
         private void btnSumma_Click(object sender, RoutedEventArgs e)
@@ -56,7 +57,7 @@ namespace Yatzy
 
         public void totalSumma()
         {
-            total = ettSumma + tvaSumma + treSumma + fyrSumma + femSumma + sexSumma;
+            total = int.Parse(ettSumma) + int.Parse(tvaSumma) + int.Parse(treSumma) + int.Parse(fyrSumma) + int.Parse(femSumma) + int.Parse(sexSumma);
         }
 
     }
