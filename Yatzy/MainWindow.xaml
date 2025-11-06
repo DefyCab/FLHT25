@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="ettBox" HorizontalAlignment="Left" Margin="213,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="ettorSumma"/>
-        <TextBox x:Name="tvaBox" HorizontalAlignment="Left" Margin="213,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="tvaorSumma"/>
-        <TextBox x:Name="treBox" HorizontalAlignment="Left" Margin="213,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="treorSumma"/>
-        <TextBox x:Name="fyrBox" HorizontalAlignment="Left" Margin="213,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="fyrorSumma"/>
-        <TextBox x:Name="femBox" HorizontalAlignment="Left" Margin="213,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="femmorSumma"/>
-        <TextBox x:Name="sexBox" HorizontalAlignment="Left" Margin="213,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="54" Height="21" TextChanged="sexorSumma"/>
+        <TextBox x:Name="ettBox" HorizontalAlignment="Left" Margin="213,93,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="54" Height="21" TextChanged="ettorSumma"/>
+        <TextBox x:Name="tvaBox" HorizontalAlignment="Left" Margin="213,114,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="54" Height="21" TextChanged="tvaorSumma"/>
+        <TextBox x:Name="treBox" HorizontalAlignment="Left" Margin="213,135,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="54" Height="21" TextChanged="treorSumma"/>
+        <TextBox x:Name="fyrBox" HorizontalAlignment="Left" Margin="213,156,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="54" Height="21" TextChanged="fyrorSumma"/>
+        <TextBox x:Name="femBox" HorizontalAlignment="Left" Margin="213,177,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="54" Height="21" TextChanged="femmorSumma"/>
+        <TextBox x:Name="sexBox" HorizontalAlignment="Left" Margin="213,196,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="54" Height="21" TextChanged="sexorSumma"/>
         <TextBlock x:Name="ett" HorizontalAlignment="Left" Margin="150,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Ettor"/></TextBlock>
         <TextBlock x:Name="tva" HorizontalAlignment="Left" Margin="150,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Tvåor"/></TextBlock>
         <TextBlock x:Name="tre" HorizontalAlignment="Left" Margin="150,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Treor"/></TextBlock>
@@ -21,5 +21,7 @@
         <TextBlock x:Name="sex" HorizontalAlignment="Left" Margin="150,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Sexor"/></TextBlock>
         <TextBlock x:Name="summa" HorizontalAlignment="Left" Margin="150,245,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold"><Run Language="sv-se" Text="Summa:"/></TextBlock>
         <Button x:Name="btnSumma" Content="" HorizontalAlignment="Left" Margin="220,246,0,0" VerticalAlignment="Top" Width="47" Background="#FFEEFDAC" Click="btnSumma_Click"/>
+        <Label x:Name="bonusLabel" Content="Bonus:" HorizontalAlignment="Left" Margin="148,266,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="bonusBox" HorizontalAlignment="Left" Margin="219,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="48" Height="20"/>
     </Grid>
 </Window>

@@ -21,7 +21,7 @@ namespace Yatzy
             InitializeComponent();
         }
 
-        public int total;
+        public int total, bonus;
         public string ettSumma, tvaSumma, treSumma, fyrSumma, femSumma, sexSumma;
 
         private void ettorSumma(object sender, TextChangedEventArgs e)
@@ -53,6 +53,11 @@ namespace Yatzy
         {
             totalSumma();
             btnSumma.Content = total;
+            if (total > 63)
+            {
+                bonus = 50;
+                bonusBox.Text = "50";
+            }
         }
 
         public void totalSumma()
