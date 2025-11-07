@@ -20,8 +20,9 @@ namespace FL
             InitializeComponent();
         }
 
-
+        public string full = "full";
         Person Love = new() { Name = "Love", Age = 25 };
+        Car car = new();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -35,7 +36,9 @@ namespace FL
 
         private void ok(object sender, RoutedEventArgs e)
         {
-            textBox.Text = Love.Name;
+            //textBox.Text = Love.Name;
+            car.fullThrottle(textBox);
+
         }
     }
 }
