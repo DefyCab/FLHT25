@@ -22,7 +22,7 @@
             </Button>
         </Button>
         <Button x:Name="button" Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="76,0,0,0" VerticalAlignment="Center" Height="53" Width="150" Click="ok"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Left" Margin="74,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" Height="51"/>
+        <TextBox x:Name="mimmi" Grid.Column="1" HorizontalAlignment="Left" Margin="74,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="141" Height="51"/>
         <Border BorderBrush="Black" BorderThickness="10
                 " Grid.Column="1" Margin="271,154,129,20" Background="#FF961717"/>
 

@@ -15,11 +15,11 @@ namespace FL
 
     class Car
     {
-        public string model = "Volvo";
-        public int speed = 120;
-        public void fullThrottle(TextBox textBox, string test)
+        public string model;
+        public int speed;
+        public void fullThrottle(TextBox mimmi, string test)
         {
-            textBox.Text = test;
+            mimmi.Text = test;
         }
 
     }
@@ -35,5 +35,18 @@ namespace FL
             textBox.Text = $"Hej, jag heter {namn}, jag är en {Species}";
         }
     }
+
+    public class Channel
+    {
+        public int SubCount => Subscribers.Count;
+
+        public List<string> Subscribers = new List<string>()
+        {
+            "Love", "Erik"
+        };
+    }
+
+
+
 }
 

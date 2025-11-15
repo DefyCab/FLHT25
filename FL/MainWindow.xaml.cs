@@ -20,11 +20,11 @@ namespace FL
             InitializeComponent();
             robot.namn = "Love";
         }
-        public string full = "jag är en variabel";
+        public string full = "jag heter Mimmi";
         Person Love = new() { Name = "Love", Age = 25 };
-        Car car = new();
+        Car volvo = new();
         Robot robot = new();
-
+        Car saab = new();
 
         // static betyder tillgänglig för alla instanser.
         static string firstName = "Erik";
@@ -33,7 +33,11 @@ namespace FL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Love_says_hi();
+            //Love_says_hi();
+            Test();
+            int result = Generisk(10);
+            string result2 = Generisk("10");
+            MessageBox.Show($"{result} + {result2}");
         }
 
         static public void Love_says_hi()
@@ -45,11 +49,41 @@ namespace FL
 
         private void ok(object sender, RoutedEventArgs e)
         {
-            //textBox.Text = Love.Name;
-            //car.fullThrottle(textBox, full);
-            robot.namn = "Love";
-            robot.sayHello(textBox);
+            saab.speed = 10020;
+            mimmi.Text = saab.speed.ToString();
+            saab.fullThrottle(mimmi, "Jag är noah");
+            //robot.namn = "Love";
+            //robot.sayHello(textBox);
 
         }
+
+        class Channel
+        {
+            public int SubCount => Subscribers.Count;
+
+            public List<string> Subscribers = new List<string>()
+        {
+            "Love", "Erik"
+        };
+
+        }
+
+        private T Generisk<T>(T item)
+        {
+            return item;
+        }
+
+        private void Test()
+        {
+            Channel channel = new Channel();
+
+            //bool first = channel.Subscribers.First() == "Love";
+            bool second = channel.Subscribers.First() == "Erik";
+            //MessageBox.Show($"{first}");
+            MessageBox.Show($"{second}");
+
+        }
+
+
     }
 }
