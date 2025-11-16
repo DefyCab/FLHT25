@@ -34,10 +34,15 @@ namespace FL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Love_says_hi();
-            Test();
-            int result = Generisk(10);
-            string result2 = Generisk("10");
-            MessageBox.Show($"{result} + {result2}");
+            //Test();
+            int tio = 10;
+            int elva = 11;
+            double tiokomma3 = 10.3;
+            double elvakomma3 = 11.3;
+            int result = Generisk<int>(ref tio, ref elva);
+            double result2 = Generisk2<double>(tiokomma3, elvakomma3);
+            //MessageBox.Show($"{result} + {result2}");
+            MessageBox.Show($"tio {tio}" + $" elva{elva}" + $" tiokomma3 {tiokomma3}" + $" elvakomma3 {elvakomma3}");
         }
 
         static public void Love_says_hi()
@@ -68,8 +73,22 @@ namespace FL
 
         }
 
-        private T Generisk<T>(T item)
+        private T Generisk<T>(ref T item, ref T item2)
         {
+            T temporary;
+            temporary = item;
+            item = item2;
+            item2 = temporary;
+
+            return item;
+        }
+        private T Generisk2<T>(T item, T item2)
+        {
+            T temporary;
+            temporary = item;
+            item = item2;
+            item2 = temporary;
+
             return item;
         }
 
