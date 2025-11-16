@@ -11,6 +11,20 @@ namespace FL
     {
         public required string Name { get; set; }
         public required int Age { get; set; }
+
+        public string returnPerson()
+        {
+            string person = $"Jag heter {Name} och är {Age} år gammal";
+
+            return person;
+        }
+
+        public string returnPerson2(Person person)
+        {
+            string name = person.Name;
+            int age = person.Age;
+            return $"Jag heter {name} och är {age} år gammal"; 
+        }
     }
 
     class Car

@@ -21,7 +21,8 @@ namespace FL
             robot.namn = "Love";
         }
         public string full = "jag heter Mimmi";
-        Person Love = new() { Name = "Love", Age = 25 };
+        Person P1 = new() { Name = "Love", Age = 46 };
+        Person P2 = new() { Name = "Erik", Age = 49 };
         Car volvo = new();
         Robot robot = new();
         Car saab = new();
@@ -34,15 +35,20 @@ namespace FL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Love_says_hi();
-            Test();
-            int tio = 10;
-            int elva = 11;
-            double tiokomma3 = 10.3;
-            double elvakomma3 = 11.3;
-            int result = Generisk<int>(ref tio, ref elva);
-            double result2 = Generisk2<double>(tiokomma3, elvakomma3);
+            //Test();
+            string Love = P1.returnPerson();
+            string Erik = P2.returnPerson2(P2);
+            MessageBox.Show($"{Love}");
+            MessageBox.Show($"{Erik}");
+
+            //int tio = 10;
+            //int elva = 11;
+            //double tiokomma3 = 10.3;
+            //double elvakomma3 = 11.3;
+            //int result = Generisk<int>(ref tio, ref elva);
+            //double result2 = Generisk2<double>(tiokomma3, elvakomma3);
             //MessageBox.Show($"{result} + {result2}");
-            MessageBox.Show($"tio {tio}" + $" elva{elva}" + $" tiokomma3 {tiokomma3}" + $" elvakomma3 {elvakomma3}");
+            //MessageBox.Show($"tio {tio}" + $" elva{elva}" + $" tiokomma3 {tiokomma3}" + $" elvakomma3 {elvakomma3}");
         }
 
         static public void Love_says_hi()
