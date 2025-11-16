@@ -34,7 +34,7 @@ namespace FL
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Love_says_hi();
-            //Test();
+            Test();
             int tio = 10;
             int elva = 11;
             double tiokomma3 = 10.3;
@@ -65,10 +65,18 @@ namespace FL
         class Channel
         {
             public int SubCount => Subscribers.Count;
+            public string FirstSubscriber => Subscribers.First();
 
             public List<string> Subscribers = new List<string>()
         {
-            "Love", "Erik"
+              "Love",
+              "Erik",
+              "Sven",
+              "Kurt",
+              "Bilal",
+              "Erika",
+              "Anette",
+              "Julie"
         };
 
         }
@@ -96,13 +104,15 @@ namespace FL
         {
             Channel channel = new Channel();
 
-            //bool first = channel.Subscribers.First() == "Love";
+            int numberOfSubscribers = channel.Subscribers.Count();
             bool second = channel.Subscribers.First() == "Erik";
-            //MessageBox.Show($"{first}");
+            int subCount = channel.SubCount;
+            string firstSub = channel.FirstSubscriber;
+            MessageBox.Show($"{numberOfSubscribers}");
             MessageBox.Show($"{second}");
+            MessageBox.Show($"{subCount}");
+            MessageBox.Show($"{firstSub}");
 
         }
-
-
     }
 }
