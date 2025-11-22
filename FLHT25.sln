@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DragAndDrop", "DragAndDrop\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial", "Tutorial\Tutorial.csproj", "{C8EA898F-386E-4C7C-9713-D828C1DFAF70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern", "FactoryPattern\FactoryPattern.csproj", "{99671FA6-97E4-421C-A11E-BE8DCA299A69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C8EA898F-386E-4C7C-9713-D828C1DFAF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8EA898F-386E-4C7C-9713-D828C1DFAF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8EA898F-386E-4C7C-9713-D828C1DFAF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99671FA6-97E4-421C-A11E-BE8DCA299A69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99671FA6-97E4-421C-A11E-BE8DCA299A69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99671FA6-97E4-421C-A11E-BE8DCA299A69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99671FA6-97E4-421C-A11E-BE8DCA299A69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
