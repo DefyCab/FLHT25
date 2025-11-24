@@ -19,14 +19,12 @@ namespace FactoryPattern
         {
             InitializeComponent();
         }
-        //private void OrderCake()
-        //{
-        //    Cake princess = _cake.MakeACake();
-        //    princess.price = 100;
-        //    princess.id = 1;
-        //    princess.type = "Princesstårta";
+        private void OrderCake()
+        {
+            CakeFactory.MakeACake();
+          
 
-        //}
+        }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
@@ -35,6 +33,7 @@ namespace FactoryPattern
             princess.id = 1;
             princess.type = "Princesstårta";
             cakeBox.Text = princess.type.ToString();
+            OrderCake();
         }
     }
 }

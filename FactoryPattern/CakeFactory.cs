@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactoryPattern
 {
-    public class CakeFactory
+    public static class CakeFactory
     {
-        public Cake MakeACake()
+        public static Cake MakeACake()
         {
-            return new Cake();
+            return new Cake { id = Index.Start.Value, price = 100, type = "princesstårta" };
         }
     }
 }
