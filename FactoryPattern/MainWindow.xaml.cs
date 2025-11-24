@@ -14,21 +14,21 @@ namespace FactoryPattern
 
     public partial class MainWindow : Window
     {
-        private CakeFactory _cake = new();
+        //private CakeFactory _cake = new();
         public MainWindow()
         {
             InitializeComponent();
         }
         private void OrderCake()
         {
-            CakeFactory.MakeACake();
-          
+            Cake one = CakeFactory.MakeACake();
+            Cake two = CakeFactory.MakeACake();
 
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            Cake princess = _cake.MakeACake();
+            Cake princess = CakeFactory.MakeACake();
             princess.price = 100;
             princess.id = 1;
             princess.type = "Princesstårta";

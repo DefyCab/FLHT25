@@ -8,9 +8,11 @@ namespace FactoryPattern
 {
     public static class CakeFactory
     {
+        private static int _index = 0;
         public static Cake MakeACake()
         {
-            return new Cake { id = Index.Start.Value, price = 100, type = "princesstårta" };
+            _index++;
+            return new Cake { id = _index, type = "Unknown" };
         }
     }
 }
