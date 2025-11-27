@@ -8,7 +8,10 @@ namespace FactoryPattern
 {
     public static class CakeFactory
     {
+        //public List<Cake> LisOfCakes = new List<Cake>();
+
         private static int _index = 0;
+
         public static Cake MakeACake()
         {
             _index++;
